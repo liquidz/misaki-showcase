@@ -23,8 +23,8 @@
 
  ;; default site data
  :site {:charset    "utf-8"
-        :site-title "%PROJECT_NAME% page"
-        :twitter    "Your twitter account"
+        :site-title "YOUR SITE"
+        :twitter    "YOUR TWITTER ACCOUNT"
         :github     "https://github.com/OWNER/REPOSITORY"
         :css        ["http://fonts.googleapis.com/css?family=Josefin+Sans"
                      "/css/main.css"
