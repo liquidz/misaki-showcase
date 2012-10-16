@@ -1,18 +1,28 @@
 ; @layout  impress
 ; @title   presentation sample
 
-(defn l [& body] (p {:class "largest"} body))
+(defn l [s] (p {:class "largest strong"} s))
+;---
 
+(slide
+  (l "1"))
 
-(slide {:x 0 :y 0}
-       (l "hello"))
+(slide
+  (l "2"))
 
-(group
-  {:x -100 :y 0}
+(slide
+  {:x 650 :y 1300 :rotate 90}
+  (l "3"))
 
-  (slide {:scale 0.1 :rotate 90}
-         (l "misaki"))
+(slide
+  {:x 650 :y 1000 :scale 3}
+  (l "4"))
 
-  (slide {:rotate -90}
-         (l "world")))
+(slide
+  {:x 100 :y 500 :rotate -180 :scale 0.2}
+  (code {:class "xx-large"} (+ 2 3)))
+
+(slide
+  {:x 5000 :y 0 :scale 30}
+  (l ":)"))
 
